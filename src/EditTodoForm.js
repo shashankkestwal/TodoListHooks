@@ -9,11 +9,11 @@ const EditTodoForm = ({id, editTodo, task, toggleEdit}) => {
       editTodo(id, value);
       reset();
       toggleEdit();
-    }} style={{minWidth:"90%"}}>
+    }} style={{minWidth:"90%", margin:"0 auto"}}>
     <TextField 
-        value={value} onChange = {handleChange} margin="normal" label="Edit Todo" sx={{ width: 1 }}/>
+        value={value} onChange = {handleChange} margin="normal" sx={{ width: 1 }} autoFocus/>
     </form>
     )
 }
 
-export default EditTodoForm
+export default EditTodoForm;
